@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="main.css">
+<title>Insert title here</title>
+<style>
+    .content-container {
+        width: 50%;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-container img, .content-container iframe {
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .ingredients {
+        background-color: #ffcccb; 
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px 0;
+    }
+
+    .instructions {
+        background-color: #d6f5d6; 
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px 0;
+    }
+
+    .instructions p:hover {
+        font-weight: bold;
+    }
+
+    .rating-comments {
+        margin: 20px 0;
+    }
+</style>
+ 	<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let viewCountElement = document.getElementById('viewCount');
+            let viewCount = localStorage.getItem('viewCount') || 0;
+            viewCountElement.textContent = `조회수: ${viewCount}`;
+
+            // 로그인 체크
+            const isLoggedIn = false; // 실제 로그인 상태 확인 방법에 따라 변경
+
+            const commentForm = document.getElementById('commentForm');
+            if (!isLoggedIn) {
+                commentForm.innerHTML = '<p>로그인 후 댓글을 남길 수 있습니다.</p>';
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <a href="login.html">로그인</a>
+                <a href="signup.html">회원가입</a>
+                <a href="#">고객센터</a>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">레시피를 부탁해</div>
+                <div class="search-bar">
+                    <input type="text" placeholder="검색어를 입력하세요">
+                </div>
+                <div class="header-icons">
+                    <a href="#"><img src="../../img/bagg.png" alt="장바구니"></a>
+                    <a href="#"><img src="../../img/login.png" alt="마이페이지"></a>
+                </div>
+            </div>
+        </div>
+        <nav id="gnav">
+            <div class="nav-container" style="position: relative;">
+                <ul class="nav-list">
+                    <li><a href="#" id="korean-cuisine">한식</a>
+                        <ul class="korean-menu">
+                            <li><a href="#">밥</a></li>
+                            <li><a href="#">국/찌개</a></li>
+                            <li><a href="#">반찬</a></li>
+                            <li><a href="#">메인</a></li>
+                            <li><a href="#">후식</a></li>
+                        </ul>
+                    </li>        
+                    <li><a href="#" id="chinese-cuisine">중식</a></li>
+                    <li><a href="#">일식</a></li>
+                    <li><a href="#">양식</a></li>
+                    <li><a href="#">분식</a></li>
+                    <li><a href="#">요리사</a></li>
+                    <li><a href="#">그 외</a></li>
+                </ul>
+            </div>
+        </nav>     
+    </header>
+	<main>
+	
+	 <div class="content-container">
+	 		<h3>[251회] 이연복 - 이연복Go 연복Go♬</h3>
+			<hr>
+        	<p>2019-11-05 오전 10:04:51 <span id="viewCount">0</span>
+			<hr>
+            <img src="../img/Donkatsu.jpg" alt="레시피 이미지">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/A5KtGSSPHtg?si=JKFU5rtrzIx1EN78" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="ingredients">
+                <h4>재료</h4>
+                    <p>삼겹살, 돈가스소스, 굴소스, 새우살, 오이, 로메인, 전분, 달걀, 소금, 양파, 당근, 튀김가루, 대파, 즉석밥, 케첩, 마요네즈</p>
+            </div>
+            <div class="instructions">
+                <h4>요리 순서</h4>
+                <p>1. 삼겹살을 비닐팩 안에 넣은 뒤 고기 망치로 두드린다.</p>
+                <p>2. 1에 전분을 묻힌 뒤 비닐팩을 덮고 고기망치로 두드린다.</p>
+                <p>3. 달걀에 소금을 넣어 달걀물을 만든 뒤 팬에 부어 지단을 만든다.</p>
+                <p>4. 3의 팬을 뒤집어 지단을 직화한 뒤 둥근 그릇에 담는다.</p>
+                <p>5. 달걀을 풀어 달걀물을 만든다.</p>
+                <p>6. 양파를 잘게 썬 뒤 물에 담가둔다.</p>
+                <p>7. 당근과 오이에 칼집을 낸다.</p>
+                <p>8. 삼겹살에 달걀물과 튀김가루를 묻힌다.</p>
+                <p>9. 8에 달걀물을 한 번 더 묻힌다.</p>
+                <p>10. 9를 기름에 넣고 튀겨 돈가스를 만든다.</p>
+                <p>11. 기름을 두른 팬에 삼겹살의 비계, 당근, 대파, 양파, 새우살, 즉석밥, 소금, 굴소스를 넣고 볶는다.</p>
+                <p>12. 오이와 로메인을 잘게 썬다.</p>
+                <p>13. 양파의 물기를 제거한 뒤, 손질한 채소에 케첩, 마요네즈를 뿌려 샐러드를 만든다.</p>
+                <p>14. 오므라이스에 케첩을 넣는다.</p>
+                <p>15. 샐러드에 오이와 당근을 올린다.</p>
+          		<p>16. 오므라이스를 달걀이 담긴 그릇에 담은 뒤 접시에 뒤집어 올린다.</p>
+          		<p>17. 오므라이스에 케첩을 뿌리고 돈가스소스와 케첩을 섞는다.</p>
+          		<p>18. 돈가스를 건져낸다.</p>
+          		<p>19. 돈가스소스와 케첩을 섞은 소스를 돈가스 위에 바른다.</p>
+            </div>
+            <div class="rating-comments">
+                <h4>별점 및 댓글</h4>
+                <form id="commentForm">
+                    <label for="rating">별점:</label>
+                    <select id="rating" name="rating">
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★</option>
+                        <option value="3">★★★</option>
+                        <option value="2">★★</option>
+                        <option value="1">★</option>
+                    </select>
+                    <br>
+                    <label for="comment">댓글:</label>
+                    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+                    <br>
+                    <button type="submit">댓글 남기기</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
