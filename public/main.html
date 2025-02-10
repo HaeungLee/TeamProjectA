@@ -69,6 +69,13 @@
             <div class="product-grid">
                 <div class="product-card">
                     <img src="../img/fishdump.jpg" alt="상품1" class="product-image" data-gif="../img/movingimg1.gif">
+                    <div class="like-button">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                          <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                        </svg>
+                        <span class="like-count">0</span>
+                      </div>
                     <div class="product-info">
                         <h3 class="product-title">피시 앤 만두</h3>
                         <span class="hidden-search">만두</span>
@@ -81,6 +88,13 @@
                 </div>
                 <div class="product-card">
                     <img src="../img/pigstew.jpg" alt="상품2" class="product-image" data-gif="../img/movingimg2.gif">
+                    <div class="like-button">
+                        <svg class="heart" viewBox="0 0 32 30">
+                          <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                        </svg>
+                        <span class="like-count">0</span>
+                      </div>
                     <div class="product-info">
                         <h3 class="product-title">돼지가 스튜에 빠진 날</h3>
                         <span class="hidden-search">돼지고기</span>
@@ -93,6 +107,13 @@
                 </div>
                 <div class="product-card">
                     <img src="../img/Donkatsu.jpg" alt="상품3" class="product-image" data-gif="../img/movingimg3.gif">
+                    <div class="like-button">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                          <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                        </svg>
+                        <span class="like-count">0</span>
+                      </div>
                     <div class="product-info">
                         <h3 class="product-title">이연복Go 연복Go♬</h3>
                         <span class="hidden-search">돈가스</span>
@@ -111,6 +132,13 @@
             <div class="product-grid">
                 <div class="product-card">
                     <img src="../img/product1.png" alt="특가상품1">
+                    <div class="like-button">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                          <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                        </svg>
+                        <span class="like-count">0</span>
+                      </div>
                     <div class="product-info">
                         <h3 class="product-title">돼지고기 김치찌개</h3>
                         <p class="product-price">15,900원</p>
@@ -122,6 +150,13 @@
                 </div>
                 <div class="product-card">
                     <img src="../img/product2.png" alt="특가상품2">
+                    <div class="like-button">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                          <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                        </svg>
+                        <span class="like-count">0</span>
+                      </div>
                     <div class="product-info">
                         <h3 class="product-title">매콤한 쭈꾸미 볶음</h3>
                         <p class="product-price">12,900원</p>
@@ -133,6 +168,13 @@
                 </div>
                 <div class="product-card">
                     <img src="../img/product3.png" alt="특가상품3">
+                    <div class="like-button">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                          <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                        </svg>
+                        <span class="like-count">0</span>
+                      </div>
                     <div class="product-info">
                         <h3 class="product-title">수제 크림 파스타</h3>
                         <p class="product-price">16,900원</p>
@@ -172,8 +214,8 @@
     		// 기본 지도 설정
 		    function initMap() {
 		        const map = new google.maps.Map(document.getElementById('map'), {
-		            center: {lat: 37.51938, lng: 126.9028}, // human academy 위치
-		            zoom: 30
+		            center: {lat: 37.51528, lng: 126.9075611}, // human academy 위치
+		            zoom: 21
 		        });
 		    }
             
@@ -263,8 +305,36 @@
                 img.setAttribute('data-original', img.src); // 원래 이미지 URL 저장
                 });
             });
-                    
+
+            document.addEventListener('DOMContentLoaded', function() {
+            const likeButtons = document.querySelectorAll('.like-button');
             
+            // 좋아요 버튼 클릭 이벤트 리스너 등록
+            likeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                const card = this.closest('.product-card');
+                const countElement = this.querySelector('.like-count');
+                let count = parseInt(countElement.textContent);
+                
+                if (card.classList.contains('liked')) {
+                    // 좋아요 취소
+                    count--;
+                    card.classList.remove('liked');
+                } else {
+                    // 좋아요 추가
+                    count++;
+                    card.classList.add('liked');
+                }
+                
+                countElement.textContent = count;
+                
+                // 여기에 서버로 데이터를 전송하는 AJAX 요청을 추가..(가능하면)
+                // 예: fetch('/api/like', { method: 'POST', body: JSON.stringify({ id }) })
+                });
+            });
+            });
+
+
             // 한식 서브메뉴 토글
             const koreanCuisine = document.getElementById('korean-cuisine');
             const koreanMenu = document.querySelector('.korean-menu');
