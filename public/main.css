@@ -230,7 +230,7 @@
             .product-card:hover .product-menu {
                     transform: translateY(0); /* hover 시 메뉴 나타남 */
                 }
-
+            
             .product-menu a {
                     color: white;
                     text-decoration: none;
@@ -310,4 +310,8 @@
 
             .korean-menu a:hover {
                 background-color: #f0f0f0; /* hover 시 배경색상 변경 */
+            }
+
+            .hidden-search {
+                display: none;
             }
