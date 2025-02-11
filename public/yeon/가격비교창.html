@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 가격 비교</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #333;
+            text-align: center;
+            transition: color 0.3s ease;
+        }
+
+        .price-comparison-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .price-comparison-list li {
+            margin-bottom: 15px;
+            cursor: pointer;
+            color: #007BFF;
+            padding: 10px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* 가격 항목에 마우스를 올리면 색상 변경 */
+        .price-comparison-list li:hover {
+            text-decoration: underline;
+            color: #0056b3;
+            transform: scale(1.05); /* 마우스 호버 시 살짝 확대 */
+            background-color: #f0f8ff; /* 배경색 변화 */
+        }
+
+        /* 가격 비교 리스트 애니메이션 */
+        .price-comparison-list {
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* 애니메이션: 요소가 천천히 나타나도록 */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* 버튼 클릭 시 전환 효과 */
+        .open-price-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .open-price-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>김치 가격 비교</h1>
+    <ul class="price-comparison-list">
+        <li onclick="window.open('https://shopping.naver.com/search/all?query=%EA%B9%80%EC%B9%98', '_blank')">네이버 쇼핑: 3,000원</li>
+        <li onclick="window.open('https://www.coupang.com/np/search?q=%EA%B9%80%EC%B9%98', '_blank')">쿠팡: 2,800원</li>
+        <li onclick="window.open('https://www.emart24.co.kr', '_blank')">이마트: 3,200원</li>
+        <li onclick="window.open('https://www.lottemart.com', '_blank')">롯데마트: 3,100원</li>
+    </ul>
+
+    <script>
+        // 추가 스크립트 필요없음
+    </script>
+</body>
+</html>

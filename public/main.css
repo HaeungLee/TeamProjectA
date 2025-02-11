@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-* {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -50,6 +50,13 @@
             font-size: 24px;
             font-weight: bold;
             color: #8B4513;
+            margin-left: -260px;
+        }
+
+        #imglogo {
+            width: 70px; 
+            height: auto;
+            margin-right: 5px;
         }
 
         .search-bar {
@@ -61,7 +68,8 @@
             padding: 8px 15px;
             border: 2px solid #8B4513;
             border-radius: 20px;
-            width: 300px;
+            width: 400px;
+            margin-left: -150px;
         }
 
         .header-icons {
@@ -180,177 +188,146 @@
             background-color: #d3be49;}
             
          #gnav ul{
-         overflow: hidden;
+            overflow: hidden;
 
          }
          #gnav li{
-         float: left;
-         width: 150px;
-         border-right: #000000 1px solid;
+            float: left;
+            width: 150px;
+            border-right: #000000 1px solid;
 
-          }
+        }
          #gnav a{
             display: block;
             padding: 5px 5px;
             text-align: center;
             text-decoration: none;
             color: #fff;
+
             }
-            #gnav a:hover{
+        #gnav a:hover{
             background: #30a06c;
             }
-            #gnav a:active{
+
+        #gnav a:active{
             background: #fff;
             color: #b81717;
             font-weight: bold;
             }
 
-            .product-card {
-                    border: 1px solid #eee;
-                    border-radius: 10px;
-                    overflow: hidden;
-                    position: relative; 
-             }
-
-            .product-card:hover {
-                    border: 3px solid black; /* 2px 검은색 border */
-                }
-            
-            .product-menu {
-                    position: static; 
-                    bottom: 0;
-                    left: 0;
-                    width: 100%; 
-                    background-color: rgba(0, 0, 0, 0.6); /* 반투명 검정색 배경 */
-                    color: white;
-                    display: flex;
-                    justify-content: space-around; /* 메뉴를 양쪽에 배치 */
-                    padding: 10px;
-                    transform: translateY(100%); /* 초기 상태는 숨겨져 있음 */
-                    transition: transform 0.3s ease; /* 부드러운 transition 효과 */
-                    opacity: 0; /* 초기 상태는 투명 */
-                    visibility: hidden; /* 초기 상태는 숨겨짐 */
-                }
-
-            .product-card:hover .product-menu {
-                    visibility: visible; /* hover 시 보이기 */
-                    transform: translateY(0);  /* hover 시 메뉴 나타남 */
-                    opacity: 1; /* hover 시 투명도 */
-                }
-            
-            .product-menu a {
-                    color: white;
-                    text-decoration: none;
-                    padding: 5px 10px;
-                    border-radius: 5px;
-                    background-color: #8B4513; /* 갈색 배경 */
-                    position: relative; /* 하트를 배치하기 위한 설정 */
-                }     
-            .product-menu a#make-recipe {
-                    background-color: #b96c34; /* 만들어먹기 메뉴 - 갈색 배경 */
-                }
-            .product-menu a#find-restaurant {
-                    background-color: #72e73c; /* 주변 맛집 찾기 메뉴 - 빨간색 배경 */
-                }
-            
-            /* 하트 아이콘 스타일 */
-
-            .like-button {
-                position: absolute;
-                bottom: 60px;   /* 오른쪽 위 top 10px */
-                right: 15px;
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-                z-index: 10;
-                }
-                
-            .heart {
-                width: 20px;
-                height: 20px;
-                fill: #ccc;
-                transition: fill 0.3s ease;
-                }
-            
-            .liked .heart {
-                fill: red;
-                }
-                
-            .like-count {
-                margin-left: 5px;
-                font-size: 14px;
-                color: #333;
-                }
-                
-            .ad-container {
-                width: 60%; /* 광고 컨테이너 width 80%로 조정 */
-                margin: 0 auto; /* 가운데 정렬 */
+        .product-card {
+                border: 1px solid #eee;
+                border-radius: 10px;
                 overflow: hidden;
-                position: relative;
+                position: relative; 
             }
 
-            .slide-box {
-                transition: transform 0.5s ease;
-                display: flex;
-                width: 100%;
+        .product-card:hover {
+                border: 3px solid black; /* 2px 검은색 border */
             }
-
-            .slide-box img {
-                width: 100%;
-                flex-shrink: 0;
-            }
-
-            .slide-buttons {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 100%; /* 슬라이드 버튼이 ad-container 양쪽에 위치하도록 */
-                display: flex;
-                justify-content: space-between; /* 버튼을 양쪽에 배치 */
-            }
-
-            .slide-buttons button {
-                width: 50px;
-                height: 50px;
-                border: none;
-                background-color: rgba(0, 0, 0, 0.5);
-                color: white;
-                font-size: 20px;
-                cursor: pointer;
-            }
-
-            .korean-menu {
-                display: none; /* 기본적으로 숨김 */
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                position: absolute; /* "한식" 메뉴 아래에 위치하도록 */
-                top: 100%; /* "한식" 메뉴 아래에 시작하도록 배치 */
+        
+        .product-menu {
+                position: static; 
+                bottom: 0;
                 left: 0;
-                background-color: rgb(194, 178, 40); /* 배경색상 */
-                border: 1px solid #0f0606; /* 테두리 */
-                z-index: 1; /* 다른 요소 위에 표시 */
-                min-width: 200px; /* 서브메뉴 최소 너비 설정 */
-                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
-            }
-
-            .korean-menu li {
+                width: 100%; 
+                background-color: rgba(0, 0, 0, 0.6); /* 반투명 검정색 배경 */
+                color: white;
+                display: flex;
+                justify-content: space-around; /* 메뉴를 양쪽에 배치 */
                 padding: 10px;
-                display: block; /* 세로로 정렬 */
-                width: 100%; /* 요소가 가로로 정렬되지 않도록 너비 설정 */
+                transform: translateY(100%); /* 초기 상태는 숨겨져 있음 */
+                transition: transform 0.3s ease; /* 부드러운 transition 효과 */
+                opacity: 0; /* 초기 상태는 투명 */
+                visibility: hidden; /* 초기 상태는 숨겨짐 */
             }
 
-            .korean-menu a {
-                color: #333;
+        .product-card:hover .product-menu {
+                visibility: visible; /* hover 시 보이기 */
+                transform: translateY(0);  /* hover 시 메뉴 나타남 */
+                opacity: 1; /* hover 시 투명도 */
+            }
+        
+        .product-menu a {
+                color: white;
                 text-decoration: none;
-                display: block; /* 링크를 블록 요소로 만들어 전체 영역 클릭 가능하도록 */
-                width: 100%; /* 요소가 가로로 정렬되지 않도록 너비 설정 */
+                padding: 5px 10px;
+                border-radius: 5px;
+                background-color: #8B4513; /* 갈색 배경 */
+                position: relative; /* 하트를 배치하기 위한 설정 */
+            }     
+        .product-menu a#make-recipe {
+                background-color: #b96c34; /* 만들어먹기 메뉴 - 갈색 배경 */
             }
+        .product-menu a#find-restaurant {
+                background-color: #72e73c; /* 주변 맛집 찾기 메뉴 - 빨간색 배경 */
+            }
+        
+        /* 하트 아이콘 스타일 */
 
-            .korean-menu a:hover {
-                background-color: #f0f0f0; /* hover 시 배경색상 변경 */
+        .like-button {
+            position: absolute;
+            bottom: 60px;   /* 오른쪽 위 top 10px */
+            right: 15px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            z-index: 10;
             }
+            
+        .heart {
+            width: 20px;
+            height: 20px;
+            fill: #ccc;
+            transition: fill 0.3s ease;
+            }
+        
+        .liked .heart {
+            fill: red;
+            }
+            
+        .like-count {
+            margin-left: 5px;
+            font-size: 14px;
+            color: #333;
+            }
+            
+        .ad-container {
+            width: 60%; /* 광고 컨테이너 width 80%로 조정 */
+            margin: 0 auto; /* 가운데 정렬 */
+            overflow: hidden;
+            position: relative;
+        }
 
-            .hidden-search {
-                display: none;
-            }
+        .slide-box {
+            transition: transform 0.5s ease;
+            display: flex;
+            width: 100%;
+        }
+
+        .slide-box img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .slide-buttons {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%; /* 슬라이드 버튼이 ad-container 양쪽에 위치하도록 */
+            display: flex;
+            justify-content: space-between; /* 버튼을 양쪽에 배치 */
+        }
+
+        .slide-buttons button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .hidden-search {
+            display: none;
+        }
