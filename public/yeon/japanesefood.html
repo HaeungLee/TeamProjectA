@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일식 웹페이지</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .food-img {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .choice-box {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .choice-box button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .choice-box button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 첫 번째 박스 -->
+        <div class="box">
+            <img src="../../img/Donkatsu.jpg" alt="일식 1" class="food-img">
+            <div class="choice-box">
+             <button id="eat-out-1"> <a href="file:///C:/Users/youth/Desktop/html,css/semi/%EB%A8%B9%EC%9C%BC%EB%9F%AC%EA%B0%88%EB%9E%98.html">
+                    먹으러 갈래?</a></button>
+                <button id="make-at-home-1">
+                    <a href="file:///C:/Users/youth/Desktop/html,css/semi/%EB%A7%8C%EB%93%A4%EC%96%B4%EB%A8%B9%EC%9D%84%EB%9E%98.html">
+                        만들어 먹을래?</a></button>
+            </div>
+        </div>
+
+        <!-- 두 번째 박스 -->
+        <div class="box">
+            <img src="../../img/fishdump.jpg" alt="일식 2" class="food-img">
+            <div class="choice-box">
+                <button id="eat-out-1"> <a href="file:///C:/Users/youth/Desktop/html,css/semi/%EB%A8%B9%EC%9C%BC%EB%9F%AC%EA%B0%88%EB%9E%98.html">
+                    먹으러 갈래?</a></button>
+                <button id="make-at-home-1">
+                    <a href="file:///C:/Users/youth/Desktop/html,css/semi/%EB%A7%8C%EB%93%A4%EC%96%B4%EB%A8%B9%EC%9D%84%EB%9E%98.html">
+                        만들어 먹을래?</a></button>
+            </div>
+        </div>
+
+        <!-- 세 번째 박스 -->
+        <div class="box">
+            <img src="../../img/pigstew.jpg" alt="일식 3" class="food-img">
+            <div class="choice-box">
+                <button id="eat-out-1"> <a href="file:///C:/Users/youth/Desktop/html,css/semi/%EB%A8%B9%EC%9C%BC%EB%9F%AC%EA%B0%88%EB%9E%98.html">
+                    먹으러 갈래?</a></button>
+                <button id="make-at-home-1">
+                    <a href="file:///C:/Users/youth/Desktop/html,css/semi/%EB%A7%8C%EB%93%A4%EC%96%B4%EB%A8%B9%EC%9D%84%EB%9E%98.html">
+                        만들어 먹을래?</a></button>
+            </div>
+        </div>
+
+        <!-- 네 번째 박스 -->
+        <div class="box">
+            <img src="../../img/product1.png" alt="일식 4" class="food-img">
+            <div class="choice-box">
+                <button id="eat-out-1"> <a href="file:///C:/Users/youth/Desktop/html,css/semi/%EB%A8%B9%EC%9C%BC%EB%9F%AC%EA%B0%88%EB%9E%98.html">
+                    먹으러 갈래?</a></button>
+                <button id="make-at-home-1">
+                    <a href="file:///C:/Users/youth/Desktop/html,css/semi/%EB%A7%8C%EB%93%A4%EC%96%B4%EB%A8%B9%EC%9D%84%EB%9E%98.html">
+                        만들어 먹을래?</a></button>
+            </div>
+        </div>
+
+        <!-- 다섯 번째 박스 -->
+        <div class="box">
+            <img src="../../img/product2.png" alt="일식 5" class="food-img">
+            <div class="choice-box">
+                <button id="eat-out-1"> <a href="file:///C:/Users/youth/Desktop/html,css/semi/%EB%A8%B9%EC%9C%BC%EB%9F%AC%EA%B0%88%EB%9E%98.html">
+                    먹으러 갈래?</a></button>
+                <button id="make-at-home-1">
+                    <a href="file:///C:/Users/youth/Desktop/html,css/semi/%EB%A7%8C%EB%93%A4%EC%96%B4%EB%A8%B9%EC%9D%84%EB%9E%98.html">
+                        만들어 먹을래?</a></button>
+            </div>
+        </div>
+
+        <!-- 여섯 번째 박스 -->
+        <div class="box">
+            <img src="../../img/product3.png" alt="일식 6" class="food-img">
+            <div class="choice-box">
+                <button id="eat-out-1"> <a href="file:///C:/Users/youth/Desktop/html,css/semi/%EB%A8%B9%EC%9C%BC%EB%9F%AC%EA%B0%88%EB%9E%98.html">
+                    먹으러 갈래?</a></button>
+                <button id="make-at-home-1">
+                    <a href="file:///C:/Users/youth/Desktop/html,css/semi/%EB%A7%8C%EB%93%A4%EC%96%B4%EB%A8%B9%EC%9D%84%EB%9E%98.html">
+                        만들어 먹을래?</a></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 버튼 클릭 이벤트 처리
+        document.getElementById('eat-out-1').addEventListener('click', function() {
+            alert('첫 번째 박스: 먹으러 갈래 클릭됨!');
+        });
+
+        document.getElementById('make-at-home-1').addEventListener('click', function() {
+            alert('첫 번째 박스: 만들어 먹을래 클릭됨!');
+        });
+
+        document.getElementById('eat-out-2').addEventListener('click', function() {
+            alert('두 번째 박스: 먹으러 갈래 클릭됨!');
+        });
+
+        document.getElementById('make-at-home-2').addEventListener('click', function() {
+            alert('두 번째 박스: 만들어 먹을래 클릭됨!');
+        });
+
+        document.getElementById('eat-out-3').addEventListener('click', function() {
+            alert('세 번째 박스: 먹으러 갈래 클릭됨!');
+        });
+
+        document.getElementById('make-at-home-3').addEventListener('click', function() {
+            alert('세 번째 박스: 만들어 먹을래 클릭됨!');
+        });
+
+        document.getElementById('eat-out-4').addEventListener('click', function() {
+            alert('네 번째 박스: 먹으러 갈래 클릭됨!');
+        });
+
+        document.getElementById('make-at-home-4').addEventListener('click', function() {
+            alert('네 번째 박스: 만들어 먹을래 클릭됨!');
+        });
+
+        document.getElementById('eat-out-5').addEventListener('click', function() {
+            alert('다섯 번째 박스: 먹으러 갈래 클릭됨!');
+        });
+
+        document.getElementById('make-at-home-5').addEventListener('click', function() {
+            alert('다섯 번째 박스: 만들어 먹을래 클릭됨!');
+        });
+
+        document.getElementById('eat-out-6').addEventListener('click', function() {
+            alert('여섯 번째 박스: 먹으러 갈래 클릭됨!');
+        });
+
+        document.getElementById('make-at-home-6').addEventListener('click', function() {
+            alert('여섯 번째 박스: 만들어 먹을래 클릭됨!');
+        });
+    </script>
+</body>
+</html>

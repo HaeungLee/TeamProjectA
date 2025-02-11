@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레시피 사이트</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-container {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .search-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .logo {
+            width: 50vw;
+            height: 50vh;
+            background-image: url('logo.jpg'); /* 로고 이미지 경로 설정 */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .menu div {
+            margin: 0 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            border-radius: 10%; /* 둥글게 만들기 */
+        }
+
+        .ranking {
+            margin-top: 20px;
+            border-top: 2px solid #000;
+            padding-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        🔍
+    </div>
+    <div class="logo" style="background-image: url('logo.jpg');"></div>
+    <div class="menu">
+        <a href="file:///C:/Users/youth/Desktop/html,css/semi/koreanfood.html">
+            <div>한  식</div>
+        </a>
+        <a href="file:///C:/Users/youth/Desktop/html,css/semi/chinesefood.html">
+            <div>중  식</div>
+        </a>
+        <a href="file:///C:/Users/youth/Desktop/html,css/semi/japanesefood.html">
+            <div>일  식</div>
+        </a>
+        <a href="file:///C:/Users/youth/Desktop/html,css/semi/westernfood.html">
+            <div>양  식</div>
+        </a>
+        <a href="file:///C:/Users/youth/Desktop/html,css/semi/desert.html">
+            <div>디 저 트</div>
+        </a>
+    </div>
+    <div class="ranking">
+        <h3>🔥 인기 레시피 랭킹</h3>
+        <ul id="ranking-list" style="list-style: none; padding: 0; margin: 0;">
+            <li>김치찌개</li>
+            <li>짜장면</li>
+            <li>초밥</li>
+            <li>떡볶이</li>
+            <li>마카롱</li>
+        </ul>
+    </div>
+</body>
+</html>
+

@@ -19,6 +19,7 @@
         </div>
         <div class="main-header">
             <div class="container">
+                <img id="imglogo" src="../img/logo2.png" alt="Logo">
                 <div class="logo">레시피를 부탁해</div>
                 <div class="search-bar">
                     <input type="text" placeholder="검색어를 입력하세요">
@@ -32,19 +33,11 @@
         <nav id="gnav">
             <div class="nav-container" style="position: relative;">
                 <ul class="nav-list">
-                    <li><a href="#" id="korean-cuisine">한식</a>
-                        <ul class="korean-menu">
-                            <li><a href="#">밥</a></li>
-                            <li><a href="#">국/찌개</a></li>
-                            <li><a href="#">반찬</a></li>
-                            <li><a href="#">메인</a></li>
-                            <li><a href="#">후식</a></li>
-                        </ul>
-                    </li>        
-                    <li><a href="#" id="chinese-cuisine">중식</a></li>
-                    <li><a href="#">일식</a></li>
-                    <li><a href="#">양식</a></li>
-                    <li><a href="#">분식</a></li>
+                    <li><a href="yeon/koreanfood.html" id="korean-cuisine">한식</a>
+                    <li><a href="yeon/chinesefood.html" id="chinese-cuisine">중식</a></li>
+                    <li><a href="yeon/japanesefood.html">일식</a></li>
+                    <li><a href="yeon/westernfood.html">양식</a></li>
+                    <li><a href="yeon/desert.html">디저트</a></li>
                     <li><a href="#">요리사</a></li>
                     <li><a href="#">그 외</a></li>
                 </ul>
@@ -82,8 +75,8 @@
                         <p class="product-price">[253회] 오세득</p>
                     </div>
                     <div class="product-menu">
-                        <a href="recipeinfo1.html" id="make-recipe">만들어먹기</a>
-                        <a href="#" id="find-restaurant">주변 맛집 찾기</a>
+                        <a href="recipeinfo1.html" class="make-recipe">만들어먹기</a>
+                        <a href="#" class="find-restaurant">주변 맛집 찾기</a>
                     </div>
                 </div>
                 <div class="product-card">
@@ -101,8 +94,8 @@
                         <p class="product-price">[252회] 샘킴</p>
                     </div>
                     <div class="product-menu">
-                        <a href="recipeinfo2.html" id="make-recipe">만들어먹기</a>
-                        <a href="#" id="find-restaurant">주변 맛집 찾기</a>
+                        <a href="recipeinfo2.html" class="make-recipe">만들어먹기</a>
+                        <a href="#" class="find-restaurant">주변 맛집 찾기</a>
                     </div>
                 </div>
                 <div class="product-card">
@@ -120,8 +113,8 @@
                         <p class="product-price">[251회] 이연복</p>
                     </div>
                     <div class="product-menu">
-                        <a href="recipeinfo3.html" id="make-recipe">만들어먹기</a>
-                        <a href="#" id="find-restaurant">주변 맛집 찾기</a>
+                        <a href="recipeinfo3.html" class="make-recipe">만들어먹기</a>
+                        <a href="#" class="find-restaurant">주변 맛집 찾기</a>
                     </div>
                 </div>
             </div>
@@ -144,8 +137,8 @@
                         <p class="product-price">15,900원</p>
                     </div>
                     <div class="product-menu">
-                        <a href="#" id="make-recipe">만들어먹기</a>
-                        <a href="#" id="find-restaurant">주변 맛집 찾기</a>
+                        <a href="#" class="make-recipe">만들어먹기</a>
+                        <a href="#" class="find-restaurant">주변 맛집 찾기</a>
                     </div>
                 </div>
                 <div class="product-card">
@@ -162,8 +155,8 @@
                         <p class="product-price">12,900원</p>
                     </div>
                     <div class="product-menu">
-                        <a href="#" id="make-recipe">만들어먹기</a>
-                        <a href="#" id="find-restaurant">주변 맛집 찾기</a>
+                        <a href="#" class="make-recipe">만들어먹기</a>
+                        <a href="#" class="find-restaurant">주변 맛집 찾기</a>
                     </div>
                 </div>
                 <div class="product-card">
@@ -180,8 +173,8 @@
                         <p class="product-price">16,900원</p>
                     </div>
                     <div class="product-menu">
-                        <a href="#" id="make-recipe">만들어먹기</a>
-                        <a href="#" id="find-restaurant">주변 맛집 찾기</a>
+                        <a href="#" class="make-recipe">만들어먹기</a>
+                        <a href="#" class="find-restaurant">주변 맛집 찾기</a>
                     </div>
                 </div>
             </div>
@@ -333,29 +326,6 @@
                 });
             });
             });
-
-
-            // 한식 서브메뉴 토글
-            const koreanCuisine = document.getElementById('korean-cuisine');
-            const koreanMenu = document.querySelector('.korean-menu');
-
-            if (koreanMenu) { // koreanMenu가 null이 아닌 경우에만 이벤트 리스너 추가
-                koreanCuisine.addEventListener('click', (event) => {
-                    event.preventDefault(); // 링크 이동 방지
-                    if (koreanMenu.style.display === 'block') {
-                        koreanMenu.style.display = 'none';
-                    } else {
-                        koreanMenu.style.display = 'block';
-                    }
-                });
-            }
-
-            document.addEventListener('click', (event) => {
-                if (koreanMenu && !koreanCuisine.contains(event.target) && !koreanMenu.contains(event.target)) {
-                    koreanMenu.style.display = 'none';
-                }
-            });
-
     </script>
 </body>
 </html>
