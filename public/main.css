@@ -256,10 +256,10 @@
                 background-color: #8B4513; /* 갈색 배경 */
                 position: relative; /* 하트를 배치하기 위한 설정 */
             }     
-        .product-menu a#make-recipe {
+        .product-menu a.make-recipe {
                 background-color: #b96c34; /* 만들어먹기 메뉴 - 갈색 배경 */
             }
-        .product-menu a#find-restaurant {
+        .product-menu a.find-restaurant {
                 background-color: #72e73c; /* 주변 맛집 찾기 메뉴 - 빨간색 배경 */
             }
         
