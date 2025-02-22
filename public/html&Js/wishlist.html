@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/wishlist.css">
+    <title>즐겨찾기 목록</title>
+</head>
+
+<body>
+<header>
+    <div class="header">
+        <div class="logo">
+            <a href="#">
+                <img class="logo_img" alt="로고이미지" src="../static/img/logo_ex.jpg">
+            </a>
+        </div>
+        <div class="logout">
+            <a href="#">로그아웃</a>
+        </div>
+    </div>
+</header>
+<hr>
+<div class="container">
+    <nav>
+        <ul>
+            <li class="item" onclick="selectItem(this)"><a href="#">홈</a></li>
+            <li class="item" onclick="selectItem(this)"><a href="#">즐겨찾기 목록</a></li>
+            <li class="item" onclick="selectItem(this)"><a href="#">비밀번호 변경</a></li>
+            <li class="item" onclick="selectItem(this)"><a href="#">연결된 계정</a></li>
+            <li class="item" onclick="selectItem(this)"><a href="#">로그인관리</a></li>
+            <li class="item" onclick="selectItem(this)"><a href="#">회원탈퇴</a></li>
+        </ul>
+    </nav>
+
+    <!-- 메인-->
+    <main>
+        <div class="main_header"><p>즐겨찾기 목록</p></div>
+        <article class="article1">
+            <div class="content">
+                <div class="text">
+                    <h2>게시글 제목을 적습니다.1</h2>
+                </div>
+                <div class="view-count">
+                    <img class="eyes" src="../static/img/icon-eye.png" alt="조회수 아이콘">
+                    <span class="view-count">n회</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article2">
+            <div class="content">
+                <div class="text">
+                    <h2>게시글 제목을 적습니다.2</h2>
+                </div>
+                <div class="view-count">
+                    <img class="eyes" src="../static/img/icon-eye.png" alt="조회수 아이콘">
+                    <span class="view-count">n회</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article3">
+            <div class="content">
+                <div class="text">
+                    <h2>게시글 제목을 적습니다.3</h2>
+                </div>
+                <div class="view-count">
+                    <img class="eyes" src="../static/img/icon-eye.png" alt="조회수 아이콘">
+                    <span class="view-count">n회</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article4">
+            <div class="content">
+                <div class="text">
+                    <h2>게시글 제목을 적습니다.4</h2>
+                </div>
+                <div class="view-count">
+                    <img class="eyes" src="../static/img/icon-eye.png" alt="조회수 아이콘">
+                    <span class="view-count">n회</span>
+                </div>
+            </div>
+        </article>
+    </main>
+<script type="text/javascript">
+    // 왼쪽 nav 마우스 클릭시 배경색 변환
+    function selectItem(selectedLi) {
+        document.querySelectorAll(".item").forEach(li => {
+            li.classList.remove("selected");
+        });
+        selectedLi.classList.add("selected");
+    }
+
+    /*즐겨찾기 구현 Js*/
+    document.addEventListener('DOMContentLoaded', function () {
+        const likeButtons = document.querySelectorAll('.like-button');
+
+        // 좋아요 버튼 클릭 이벤트 리스너 등록
+        likeButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const card = this.closest('.product-card');
+                const countElement = this.querySelector('.like-count');
+                let count = parseInt(countElement.textContent);
+
+                if (card.classList.contains('liked')) {
+                    // 좋아요 취소
+                    count--;
+                    card.classList.remove('liked');
+                } else {
+                    // 좋아요 추가
+                    count++;
+                    card.classList.add('liked');
+                }
+
+                countElement.textContent = count;
+            });
+        });
+    });
+
+</script>
+</div>
+</body>
+</html>

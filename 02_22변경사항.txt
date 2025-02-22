@@ -1,0 +1,37 @@
+ALL)
+ - html 과 js 파일 합본 및 js 하단으로 이동
+ - public 안에 html&js / css / fonts / img로 폴더 분리
+ - 혹시라도 .idea 폴더가 첨부 될 수도 있는데 제가 사용하는 툴 때문에 생기는 거니까 삭제하셔도 됩니다.
+
+부분 변경)
+ - recipinfo(1,2,3) 상단 css 분리
+ - recipinfo(1,2,3) 헤더 로고 삽입
+ - recipinfo(1,2,3) 상단 nav (회원가입 및 로그인으로 변경=longin_signup.html로 파일명 변경)
+
+ - longin_signup.htm(=회원가입 및 로그인), 기존 login.html, signup.html은 남겨두었습니다.
+ - mypage.html 상단 로고 삽입 (headerlogo.png를 따로 만들었습니다.)
+ - signupSuccess.html : hover 색깔 원래대로 돌아오게 변경
+ - 필요한 img 파일 추가
+
+//------------------------------------
+
+첨부한 이미지 추천 사이즈
+	//html 변경에 따라 유동적으로
+.logo {
+    width: 350px;
+    height: 100px;
+}
+
+.slide-box>img{
+    width: 1600px;  
+    height: 300px;
+}
+
+ - footerImg는 대리석 느낌이면 좋겠다고 하셔서 비슷한 걸로 찾아봤습니다.
+
+ - slide4는 1번 슬라이드에 넣으면 좋을 것 같아서 첨부합니다
+글씨 빼고 header에 넣어도 좋을 거 같기도 하고.. 적용해 보시고 수정 필요하시면 알려주세요.
+
+- main_frame.img(액자)는 main-section에 넣을 예정이고,
+product-card 기준으로 가로 3개 세로 2개 기준으로 맞춰져 있습니다.
+이미지 크기는 html이 끝나면 다시 수정할테니 이런 느낌이구나 하고 넣어주세요.

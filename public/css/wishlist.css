@@ -1,0 +1,150 @@
+/*박스 구역 확인용 : border: 1px solid black;*/
+
+@font-face {
+    font-family: "서울남산체B";
+    src: url("../fonts/SeoulNamsanL.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "서울남산체B", sans-serif;
+    font-size: 17px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p {
+    direction: ltr;
+}
+
+body {
+    min-width: 100vw;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.logo_img {
+    width: 300px;
+    height: 100px;
+}
+
+.logout {
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+nav {
+    width: 200px;
+    height: 100vh;
+    padding: 10px;
+    margin-left: 40px;
+    border-right: 1px solid #8c8c8c;
+}
+
+.item {
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 15px;
+    margin-bottom: 10px;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/*마우스 올릴시 배경색 변환*/
+.selected {
+    background-color: #EEEEEE;
+}
+
+/*ul 앞 도형(원) 숨기기*/
+ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+/*main css 시작*/
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main_header {
+    position: sticky;
+    top: 0;
+    height: 60px; /* 헤더 높이 설정 */
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main_header > p {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 700px;
+    overflow-y: auto;
+    margin-right: 90px;
+}
+
+article {
+    border-top: 1px solid #8c8c8c; /*article 윗줄*/
+    border-bottom: 1px solid #8c8c8c; /*article 밑줄*/
+    padding-top: 70px;
+    padding: 20px;
+    display: block;
+    min-height: 100px;
+    min-width: 800px;
+    margin: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.text {
+    border: 1px solid black;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+
+.view-count{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+}
+
+.eyes {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+

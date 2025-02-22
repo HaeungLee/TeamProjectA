@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/singupSuccess.css">
+    <title>퓨전을 부탁해</title>
+</head>
+<body>
+<div class="box"></div>
+<div class="message">
+    <div class="success-message">
+        <div><p class="Welcome">Welcome!</p><br></div>
+        <p class="text">🎉 회원가입이 완료되었습니다 🎉</p>
+        <p class="text">퓨전의 세계에 빠져보세요!</p>
+        <br><br>
+        <a id="myButton" href="#">홈으로</a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    const button = document.getElementById("myButton");
+
+    button.addEventListener("mouseenter", () => {
+        button.style.cursor = "pointer"; // 마우스를 올리면 손가락 모양
+        button.style.backgroundColor = "#0056b3"; // 색 변경
+    });
+
+    button.addEventListener("mouseleave", () => {
+        button.style.backgroundColor = "#FFEB5A"; // 원래 색으로 복귀
+    });
+</script>
+</body>
+</html>
