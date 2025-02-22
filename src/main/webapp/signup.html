@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/login_signup.css">
+    <title>회원가입</title>
+</head>
+<body>
+
+    <div class="signup-container">
+    	    	
+        <div class="signup-header">
+            <h1>레시피를 부탁해</h1>
+            <p>맛있는 여정에 함께 떠나요</p>
+        </div>
+        <form class="signup-form" action="signup_process.jsp" method="post" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" placeholder="이름을 입력해주세요" required>
+            </div>
+            <div class="form-group">
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요" required>
+            </div>
+            <div class="form-group">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">비밀번호 확인</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="비밀번호를 다시 입력해주세요" required>
+            </div>
+            <button type="submit" class="signup-button">회원가입</button>
+        </form>
+        <div class="social-signup">
+            <div class="social-buttons">
+                <div class="social-button" onclick="kakaoSignup()">K</div>
+                <div class="social-button" onclick="naverSignup()">N</div>
+                <div class="social-button" onclick="googleSignup()">G</div>
+            </div>
+        </div>
+        <div class="login-link">
+            이미 회원이신가요? <a href="login.html">로그인</a>
+        </div>
+    </div>
+	
+    <script>
+        function validateForm() {
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm_password").value;
+
+            if (password !== confirmPassword) {
+                alert("비밀번호가 일치하지 않습니다.");
+                return false; 
+            }
+            return true; 
+        }
+        
+        function kakaoSignup() {
+            // 카카오 회원가입 기능 구현
+            alert("카카오 회원가입 기능은 아직 준비 중입니다.");
+        }
+
+        function naverSignup() {
+            // 네이버 회원가입 기능 구현
+            alert("네이버 회원가입 기능은 아직 준비 중입니다.");
+        }
+
+        function googleSignup() {
+            // 구글 회원가입 기능 구현
+            alert("구글 회원가입 기능은 아직 준비 중입니다.");
+        }
+    </script>
+</body>
+</html>

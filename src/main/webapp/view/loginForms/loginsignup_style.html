@@ -1,0 +1,94 @@
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+ <title>Insert title here</title>
+ <link rel="stylesheet" type="text/css" href="loginsignup_style.css">
+ </head>
+ <body>
+ <div class="container right-panel-active">
+   <!-- Sign Up -->
+   <div class="container__form container--signup">
+     <form action="signup_process.jsp" class="form" id="form1" method="post" onsubmit="return validateForm()">
+       <h2 class="form__title">회원 가입</h2>
+       <input type="text" placeholder="이름" class="input" id="name" name="name" required />
+       <input type="email" placeholder="이메일" class="input" id="email" name="email" required />
+       <input type="password" placeholder="비밀번호" class="input" id="password" name="password" required />
+       <input type="password" placeholder="비밀번호 확인" class="input"id="confirm_password" name="confirm_password" required>
+       <button class="btn">회원 가입</button>
+     </form>
+     <div class="social-signup">
+        <div class="social-buttons">
+          <div class="social-button" onclick="kakaoSignup()">K</div>
+          <div class="social-button" onclick="naverSignup()">N</div>
+          <div class="social-button" onclick="googleSignup()">G</div>
+        </div>
+      </div>
+   </div>
+ 
+   <!-- Sign In -->
+   <div class="container__form container--signin">
+     <form action="login_process.jsp" class="form" id="form2">
+       <h2 class="form__title">로그인</h2>
+       <input type="email" placeholder="이메일" class="input" />
+       <input type="password" placeholder="비밀번호" class="input" />
+       <a href="#" class="link">암호를 잊으셨나요?</a>
+       <button class="btn">로그인</button>
+     </form>
+   </div>
+ 
+   <!-- Overlay -->
+   <div class="container__overlay">
+     <div class="overlay">
+       <div class="overlay__panel overlay--left">
+         <button class="btn" id="signIn">로그인</button>
+       </div>
+       <div class="overlay__panel overlay--right">
+         <button class="btn" id="signUp">회원가입</button>
+       </div>
+     </div>
+   </div>
+ </div>
+ <script type="text/javascript">
+     const signInBtn = document.getElementById("signIn");
+     const signUpBtn = document.getElementById("signUp");
+     const fistForm = document.getElementById("form1");
+     const secondForm = document.getElementById("form2");
+     const container = document.querySelector(".container");
+     
+     signInBtn.addEventListener("click", () => {
+       container.classList.remove("right-panel-active");
+     });
+     
+     signUpBtn.addEventListener("click", () => {
+       container.classList.add("right-panel-active");
+     });
+     
+     fistForm.addEventListener("submit", (e) => e.preventDefault());
+     secondForm.addEventListener("submit", (e) => e.preventDefault());
+
+     // 비밀번호 일치 검사
+    function validateForm() {
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirm_password").value;
+      if (password !== confirmPassword) {
+        alert("비밀번호가 일치하지 않습니다.");
+        return false; // 폼 제출 중단
+      }
+      return true; // 폼 제출 허용
+    }
+
+    // 소셜 로그인 기능 (임시 알림)
+    function kakaoSignup() {
+      alert("카카오 회원가입 기능은 아직 준비 중입니다.");
+    }
+    function naverSignup() {
+      alert("네이버 회원가입 기능은 아직 준비 중입니다.");
+    }
+    function googleSignup() {
+      alert("구글 회원가입 기능은 아직 준비 중입니다.");
+    }
+ </script>
+ </body>
+ </html>
