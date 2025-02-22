@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "서울남산체B";
+    src: url("../fonts/SeoulNamsanL.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "서울남산체B", sans-serif;
+    font-size: 17px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p {
+    direction: ltr;
+}
+
+body {
+    min-width: 100vw;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.logo_img {
+    width: 300px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.logout {
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+nav {
+    width: 200px;
+    height: 100vh;
+    padding: 10px;
+    margin-left: 40px;
+    border-right: 1px solid #8c8c8c;
+}
+
+.item {
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 15px;
+    margin-bottom: 10px;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 10px;
+ }
+
+/*마우스 올릴시 배경색 변환*/
+.selected {
+    background-color: #EEEEEE;
+}
+
+/*ul 앞 도형(원) 숨기기*/
+ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+/*main css 시작*/
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.text-container {
+    border: 2px solid #8c8c8c;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.text-box {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.textbox:first-child {
+    font-size: x-large;
+}
+
+.text-box-sand {
+    border-top: 1px solid #8c8c8c;
+    padding-top: 10px;
+}
+
+.text-box-sand span {
+    font-weight: bolder;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text:last-child {
+    border-bottom: none;
+}
+
+.arrow {
+    color: gray;
+}
+
+.textbox {
+    padding: 12px;
+    font-size: 16px;
+}
+
+main {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-right: 70px;
+}
+
+.title {
+    display: flex;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+address {
+    font-style: normal;
+}
+
+.email {
+    font-size: small;
+}
+
+.email-2 {
+    font-size: small;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+.user {
+    font-weight: bolder;
+}

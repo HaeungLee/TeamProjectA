@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <title>레시피를 부탁해</title>
+</head>
+<body>
+<header>
+    <div class="top-header">
+        <div class="container">
+            <a href="/login_signup">회원가입 및 로그인</a>
+            <a href="#">고객센터</a>
+        </div>
+    </div>
+    <div class="main-header">
+        <div class="container">
+            <img class="logo" src="../img/headerlogo.png" alt="메인로고">
+            <div class="search-bar">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <img src="../img/search.png" alt="돋보기">
+            </div>
+            <div class="header-icons">
+                <a href="#"><img src="../img/bagg.png" alt="장바구니"></a>
+                <a href="#"><img src="../img/login.png" alt="마이페이지"></a>
+            </div>
+        </div>
+    </div>
+    <nav id="gnav">
+        <div class="nav-container" style="position: relative;">
+            <ul class="nav-list">
+                <li><a href="#" id="korean-cuisine">한식</a>
+                    <ul class="korean-menu">
+                        <li><a href="#">밥</a></li>
+                        <li><a href="#">국/찌개</a></li>
+                        <li><a href="#">반찬</a></li>
+                        <li><a href="#">메인</a></li>
+                        <li><a href="#">후식</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" id="chinese-cuisine">중식</a></li>
+                <li><a href="#">일식</a></li>
+                <li><a href="#">양식</a></li>
+                <li><a href="#">분식</a></li>
+                <li><a href="#">요리사</a></li>
+                <li><a href="#">그 외</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="ad-container">
+        <div class="slide-box">
+            <img src="../img/slide4.png" alt="광고이미지1">
+            <img src="../img/slide4.png" alt="광고이미지2">
+            <img src="../img/slide4.png" alt="광고이미지3">
+        </div>
+        <div class="slide-buttons">
+            <button class="slide-prev">&lt;</button>
+            <button class="slide-next">&gt;</button>
+        </div>
+    </div>
+
+    <section class="main-section">
+        <h2 class="section-title">가장 많이 찾아 본 레시피</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="../img/fishdump.jpg" alt="상품1" class="product-image"
+                     data-gif="../img/movingimg1.gif">
+                <div class="like-button">
+                    <svg class="heart" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                    <span class="like-count">0</span>
+                </div>
+
+                <div class="product-info">
+                    <h3 class="product-title">피시 앤 만두</h3>
+                    <span class="hidden-search">만두</span>
+                    <p class="product-price">[253회] 오세득</p>
+                </div>
+                <div class="product-menu">
+                    <a href="recipeinfo1.html" class="make-recipe">만들어먹기</a>
+                    <a href="#" class="find-restaurant">주변 맛집 찾기</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../img/pigstew.jpg" alt="상품2" class="product-image"
+                     data-gif="../img/movingimg2.gif">
+                <div class="like-button">
+                    <svg class="heart" viewBox="0 0 32 30">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                    <span class="like-count">0</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">돼지가 스튜에 빠진 날</h3>
+                    <span class="hidden-search">돼지고기</span>
+                    <p class="product-price">[252회] 샘킴</p>
+                </div>
+                <div class="product-menu">
+                    <a href="recipeinfo2.html" class="make-recipe">만들어먹기</a>
+                    <a href="#" class="find-restaurant">주변 맛집 찾기</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../simg/fishdump.jpg" alt="상품3" class="product-image"
+                     data-gif="../img/movingimg3.gif">
+                <div class="like-button">
+                    <svg class="heart" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                    <span class="like-count">0</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">이연복Go 연복Go♬</h3>
+                    <span class="hidden-search">돈가스</span>
+                    <p class="product-price">[251회] 이연복</p>
+                </div>
+                <div class="product-menu">
+                    <a href="recipeinfo3.html" class="make-recipe">만들어먹기</a>
+                    <a href="#" class="find-restaurant">주변 맛집 찾기</a>
+                </div>
+            </div>
+
+            <!--4번-->
+            <div class="product-card">
+                <img src="../img/fishdump.jpg" alt="상품3" class="product-image"
+                     data-gif="../img/movingimg3.gif">
+                <div class="like-button">
+                    <svg class="heart" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                    <span class="like-count">0</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">이연복Go 연복Go♬</h3>
+                    <span class="hidden-search">돈가스</span>
+                    <p class="product-price">[251회] 이연복</p>
+                </div>
+                <div class="product-menu">
+                    <a href="recipeinfo3.html" class="make-recipe">만들어먹기</a>
+                    <a href="#" class="find-restaurant">주변 맛집 찾기</a>
+                </div>
+            </div>
+
+            <!--5번-->
+            <div class="product-card">
+                <img src="../img/Donkatsu.jpg" alt="상품3" class="product-image"
+                     data-gif="../img/movingimg3.gif">
+                <div class="like-button">
+                    <svg class="heart" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                    <span class="like-count">0</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">이연복Go 연복Go♬</h3>
+                    <span class="hidden-search">돈가스</span>
+                    <p class="product-price">[251회] 이연복</p>
+                </div>
+                <div class="product-menu">
+                    <a href="recipeinfo3.html" class="make-recipe">만들어먹기</a>
+                    <a href="#" class="find-restaurant">주변 맛집 찾기</a>
+                </div>
+            </div>
+
+            <!--6번-->
+            <div class="product-card">
+                <img src="../img/Donkatsu.jpg" alt="상품3" class="product-image"
+                     data-gif="../img/movingimg3.gif">
+                <div class="like-button">
+                    <svg class="heart" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                    <span class="like-count">0</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">이연복Go 연복Go♬</h3>
+                    <span class="hidden-search">돈가스</span>
+                    <p class="product-price">[251회] 이연복</p>
+                </div>
+                <div class="product-menu">
+                    <a href="recipeinfo3.html" class="make-recipe">만들어먹기</a>
+                    <a href="#" class="find-restaurant">주변 맛집 찾기</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="main-section">
+        <h2 class="section-title">제철 추천메뉴</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="../img/product1.png" alt="특가상품1">
+                <div class="like-button">
+                    <svg class="heart" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                    <span class="like-count">0</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">돼지고기 김치찌개</h3>
+                    <p class="product-price">15,900원</p>
+                </div>
+                <div class="product-menu">
+                    <a href="#" class="make-recipe">만들어먹기</a>
+                    <a href="#" class="find-restaurant">주변 맛집 찾기</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../img/product2.png" alt="특가상품2">
+                <div class="like-button">
+                    <svg class="heart" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                    <span class="like-count">0</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">매콤한 쭈꾸미 볶음</h3>
+                    <p class="product-price">12,900원</p>
+                </div>
+                <div class="product-menu">
+                    <a href="#" class="make-recipe">만들어먹기</a>
+                    <a href="#" class="find-restaurant">주변 맛집 찾기</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../img/product3.png" alt="특가상품3">
+                <div class="like-button">
+                    <svg class="heart" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                    <span class="like-count">0</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">수제 크림 파스타</h3>
+                    <p class="product-price">16,900원</p>
+                </div>
+                <div class="product-menu">
+                    <a href="#" id="make-recipe">만들어먹기</a>
+                    <a href="#" id="find-restaurant">주변 맛집 찾기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-info">
+            <h3>고객센터</h3>
+            <p>TEL: 1234-5678</p>
+            <p>운영시간: 평일 09:00 - 18:00 (주말/공휴일 휴무)</p>
+            <p>주소: 서울특별시 영등포구 테헤란로 123</p>
+            <div class="social-links">
+                <a href="#"><img src="../img/insta.png" alt="인스타그램"></a>
+                <a href="#"><img src="../img/fb.png" alt="페이스북"></a>
+                <a href="#"><img src="../img/kakaos.png" alt="카카오톡"></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <p>회사소개</p>
+            <p>이용약관</p>
+            <p>개인정보처리방침</p>
+            <p>제휴문의</p>
+        </div>
+    </div>
+</footer>
+<script>
+
+    // 기본 지도 설정
+    function initMap() {
+        const map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 37.51528, lng: 126.9075611}, // human academy 위치
+            zoom: 21
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // 네비게이션 서브메뉴 토글
+        const productCards = document.querySelectorAll('.product-card');
+
+        productCards.forEach(card => {
+            const makeRecipeLink = card.querySelector('.product-menu a:nth-child(1)'); // "만들어먹기" 링크
+            const findRestaurantLink = card.querySelector('.product-menu a:nth-child(2)'); // "주변 맛집 찾기" 링크
+
+            findRestaurantLink.addEventListener('click', (event) => {
+                event.preventDefault(); // 링크 이동 방지
+                const dishName = card.querySelector('.hidden-search').textContent; // 해당 요리명을 가져옴
+                // 구글 맵 검색 링크 생성
+                const googleMapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(dishName)}`;
+                window.open(googleMapsSearchUrl, '_blank');
+            });
+        });
+    });
+
+
+    // 슬라이드 기능 구현
+    const slideBox = document.querySelector('.slide-box');
+    const slidePrevButton = document.querySelector('.slide-prev');
+    const slideNextButton = document.querySelector('.slide-next');
+    const slideImages = document.querySelectorAll('.slide-box img'); // 이미지 요소 모두 선택
+    let currentPosition = 0;
+    let intervalId;
+
+    function slide() {
+        slideBox.style.transform = `translateX(-${currentPosition * 100}%)`;
+    }
+
+    slidePrevButton.addEventListener('click', () => {
+        currentPosition--;
+        if (currentPosition < 0) {
+            currentPosition = slideImages.length - 1; // 마지막 이미지로 이동
+        }
+        slide();
+        resetInterval();
+    });
+
+    slideNextButton.addEventListener('click', () => {
+        currentPosition++;
+        if (currentPosition >= slideImages.length) {
+            currentPosition = 0; // 처음 이미지로 이동
+        }
+        slide();
+        resetInterval();
+    });
+
+    function startInterval() {
+        intervalId = setInterval(() => {
+            currentPosition++;
+            if (currentPosition >= slideImages.length) {
+                currentPosition = 0;
+            }
+            slide();
+        }, 5000); // 5초 간격으로 자동 슬라이드
+    }
+
+    function resetInterval() {
+        clearInterval(intervalId); // 기존 interval 제거
+        startInterval(); // 새로운 interval 시작
+    }
+
+    startInterval(); // 자동 슬라이드 시작
+
+    //이미지 마우스 오버시 gif로 변경
+    document.addEventListener('DOMContentLoaded', () => {
+        const productCards = document.querySelectorAll('.product-card');
+
+        productCards.forEach(card => {
+            const img = card.querySelector('.product-image');
+            const gifSrc = img.getAttribute('data-gif');
+
+            card.addEventListener('mouseover', () => {
+                img.src = gifSrc; // 이미지 URL을 GIF로 변경
+            });
+
+            card.addEventListener('mouseout', () => {
+                img.src = img.getAttribute('data-original'); // 원래 이미지로 변경
+            });
+
+            img.setAttribute('data-original', img.src); // 원래 이미지 URL 저장
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const likeButtons = document.querySelectorAll('.like-button');
+
+        // 좋아요 버튼 클릭 이벤트 리스너 등록
+        likeButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const card = this.closest('.product-card');
+                const countElement = this.querySelector('.like-count');
+                let count = parseInt(countElement.textContent);
+
+                if (card.classList.contains('liked')) {
+                    // 좋아요 취소
+                    count--;
+                    card.classList.remove('liked');
+                } else {
+                    // 좋아요 추가
+                    count++;
+                    card.classList.add('liked');
+                }
+
+                countElement.textContent = count;
+
+                // 여기에 서버로 데이터를 전송하는 AJAX 요청을 추가..(가능하면)
+                // 예: fetch('/api/like', { method: 'POST', body: JSON.stringify({ id }) })
+            });
+        });
+    });
+
+
+    // 한식 서브메뉴 토글
+    const koreanCuisine = document.getElementById('korean-cuisine');
+    const koreanMenu = document.querySelector('.korean-menu');
+
+    if (koreanMenu) { // koreanMenu가 null이 아닌 경우에만 이벤트 리스너 추가
+        koreanCuisine.addEventListener('click', (event) => {
+            event.preventDefault(); // 링크 이동 방지
+            if (koreanMenu.style.display === 'block') {
+                koreanMenu.style.display = 'none';
+            } else {
+                koreanMenu.style.display = 'block';
+            }
+        });
+    }
+
+    document.addEventListener('click', (event) => {
+        if (koreanMenu && !koreanCuisine.contains(event.target) && !koreanMenu.contains(event.target)) {
+            koreanMenu.style.display = 'none';
+        }
+    });
+
+</script>
+</body>
+</html>

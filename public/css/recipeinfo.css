@@ -1,0 +1,37 @@
+
+.content-container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #cccccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-container img, .content-container iframe {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.ingredients {
+    background-color: #ffcccb;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.instructions {
+    background-color: #d6f5d6;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.instructions p:hover {
+    font-weight: bold;
+}
+
+.rating-comments {
+    margin: 20px 0;
+}

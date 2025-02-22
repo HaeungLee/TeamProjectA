@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/mypage.css">
+    <title>마이페이지</title>
+</head>
+
+<body>
+<header>
+    <div class="header">
+        <div class="logo">
+            <a href="#">
+                <img class="logo_img" alt="로고이미지" src="../img/headerlogo.png">
+            </a>
+        </div>
+        <div class="logout">
+            <a href="#">로그아웃</a>
+        </div>
+    </div>
+</header>
+<hr>
+<div class="container">
+    <nav>
+        <ul>
+            <li class="item" onclick="selectItem(this)"><a href="#">홈</a></li>
+            <li class="item" onclick="selectItem(this)"><a href="#">즐겨찾기 목록</a></li>
+            <li class="item" onclick="selectItem(this)"><a href="#">비밀번호 변경</a></li>
+            <li class="item" onclick="selectItem(this)"><a href="#">연결된 계정</a></li>
+            <li class="item" onclick="selectItem(this)"><a href="#">로그인관리</a></li>
+            <li class="item" onclick="selectItem(this)"><a href="#">회원탈퇴</a></li>
+        </ul>
+    </nav>
+
+        <main>
+            <article class="text-container">
+                <!-- 계정 정보 (볼드) -->
+                <div class="text-box">
+                    <div class="text">
+                        <span>계정 정보</span>
+                        <span class="arrow">></span>
+                    </div>
+                </div>
+                <!-- 내용 -->
+                <section class="layoutContent">
+                    <div class="textbox">
+                        <p class="user">홍길동</p>
+                        <p class="email">hong@gmail.com </p>
+                    </div>
+                </section>
+            </article>
+
+            <article class="text-container">
+                <!-- 인증 정보 (볼드) -->
+                <div class="text-box">
+                    <div class="text">
+                        <span>인증 정보</span>
+                        <span class="arrow">></span>
+                    </div>
+                </div>
+                <!-- 내용 -->
+                <section class="layoutContent">
+                    <div>
+                        <div class="textbox">
+                            <p>아이디</p>
+                            <p class="user">Hong1234 </p>
+                        </div>
+                        <div class="textbox">
+                            <p>휴대폰번호</p>
+                            <p class="user">010-1234-5678 </p>
+                        </div>
+
+                        <div class="textbox">
+                            <p>이메일</p>
+                            <p class="email-2">hong@gmail.com </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- 광고수신(볼드) -->
+                <div class="text-box-sand">
+                    <div class="text">
+                        <span>수신 정보</span>
+                        <span class="arrow">></span>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+
+<script type="text/javascript">
+    function selectItem(selectedLi) {
+        document.querySelectorAll(".item").forEach(li => {
+            li.classList.remove("selected");
+        });
+        selectedLi.classList.add("selected");
+    }
+</script>
+</body>
+</html>
